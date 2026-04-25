@@ -1,0 +1,103 @@
+{
+  "header": {
+    "start": "Start",
+    "features": "Features",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "demo": "View Demo",
+    "freeTrial": "Free Trial"
+  },
+  "feat_orders": "Orders Management",
+  "feat_orders_desc": "Full lifecycle tracking",
+  "feat_stock": "Stock Management",
+  "feat_stock_desc": "Alerts and real inventory",
+  "feat_logistics": "Logistics",
+  "feat_logistics_desc": "Shipping and delivery",
+  "feat_confirm": "Confirmation",
+  "feat_confirm_desc": "Validation via WhatsApp/Call",
+  "hero": {
+    "title": "Launch your shop like a pro, even if you are a beginner.",
+    "subtitle": "Manage orders, customers, stock and growth with a real system from day one.",
+    "ctaStart": "Start for free",
+    "ctaHow": "See how to start"
+  },
+  "fear": {
+    "title": "Most fail right from the start.",
+    "items": [
+      "no organization",
+      "poor customer follow-up",
+      "loss of orders",
+      "random decisions"
+    ]
+  },
+  "promise": {
+    "title": "Everything you need to start right",
+    "items": {
+      "orders": "order management",
+      "customers": "customer files",
+      "stock": "stock tracking",
+      "status": "automatic statuses",
+      "dashboard": "simple dashboard",
+      "growth": "solid foundation for growth"
+    }
+  },
+  "steps": {
+    "title": "In 3 steps",
+    "step1": "Create your account",
+    "step2": "Add products / orders",
+    "step3": "Lead like a real business"
+  },
+  "support": {
+    "title": "You are not alone",
+    "onboarding": "simple onboarding",
+    "tutorials": "video tutorials",
+    "support": "quick support",
+    "advice": "starting advice",
+    "scalable": "scalable as you grow"
+  },
+  "ambition": {
+    "title": "Start small. Think big.",
+    "timeline": {
+      "small": "10 orders/month",
+      "medium": "100 orders/month",
+      "large": "1,000 orders/month",
+      "footer": "RiseManager accompanies every level."
+    }
+  },
+  "integrations": {
+    "title": "Integrations"
+  },
+  "testimonials": {
+    "t1": "I started cleanly without getting lost.",
+    "t2": "First sales managed easily.",
+    "t3": "I wish I had started with this sooner."
+  },
+  "pricing": {
+    "starter": "Starter Free Trial",
+    "starterSub": "7 days trial",
+    "growth": "Growth",
+    "growthSub": "when it starts selling",
+    "empire": "Empire",
+    "empireSub": "when you scale"
+  },
+  "faq": {
+    "q1": "Do I need to be an expert?",
+    "q2": "How long to start?",
+    "q3": "Mobile compatible?",
+    "q4": "Can I evolve later?",
+    "q5": "Support available?"
+  },
+  "form": {
+    "name": "Name",
+    "phone": "Phone",
+    "country": "Country",
+    "beginnerQ": "Are you a beginner?",
+    "yes": "Yes",
+    "started": "I already started",
+    "project": "Project:",
+    "clothing": "clothing",
+    "cosmetic": "cosmetic",
+    "accessories": "accessories",
+    "other": "other"
+  }
+}

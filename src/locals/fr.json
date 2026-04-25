@@ -1,0 +1,106 @@
+{
+  "header": {
+    "start": "Commencer",
+    "features": "Fonctionnalités",
+    "pricing": "Tarifs",
+    "faq": "FAQ",
+    "demo": "Voir démo",
+    "freeTrial": "Essai gratuit"
+  },
+  "feat_orders": "Gestion Commandes",
+  "feat_orders_desc": "Suivi complet du cycle de vie",
+  "feat_stock": "Gestion Stock",
+  "feat_stock_desc": "Alertes et inventaire réel",
+  "feat_logistics": "Logistique",
+  "feat_logistics_desc": "Expédition et livraison",
+  "feat_confirm": "Confirmation",
+  "feat_confirm_desc": "Validation par WhatsApp/Appel",
+  "hero": {
+    "title": "Lance ta boutique comme un pro, même si tu débutes.",
+    "subtitle": "Gère commandes, clients, stock et croissance avec un vrai système dès le premier jour.",
+    "ctaStart": "Commencer gratuitement",
+    "ctaHow": "Voir comment débuter"
+  },
+  "fear": {
+    "title": "La plupart ratent dès le départ.",
+    "items": [
+      "pas d’organisation",
+      "mauvais suivi clients",
+      "perte des commandes",
+      "décisions au hasard"
+    ]
+  },
+  "promise": {
+    "title": "Tout ce qu’il faut pour bien démarrer",
+    "items": {
+      "orders": "gestion commandes",
+      "customers": "fiches clients",
+      "stock": "suivi stock",
+      "status": "statuts automatiques",
+      "dashboard": "tableau de bord simple",
+      "growth": "base solide pour grandir"
+    }
+  },
+  "steps": {
+    "title": "En 3 étapes",
+    "step1": "Créer ton compte",
+    "step1_desc": "Une inscription ultra-rapide pour commencer dès maintenant.",
+    "step2": "Ajouter produits / commandes",
+    "step2_desc": "Importez vos données ou créez vos premières fiches en un clic.",
+    "step3": "Piloter comme un vrai business",
+    "step3_desc": "Suivez vos performances et développez votre activité sereinement."
+  },
+  "support": {
+    "title": "Tu n’es pas seul",
+    "onboarding": "onboarding simple",
+    "tutorials": "tutoriels vidéo",
+    "support": "support rapide",
+    "advice": "conseils démarrage",
+    "scalable": "évolutif quand tu grandis"
+  },
+  "ambition": {
+    "title": "Commence petit. Pense grand.",
+    "timeline": {
+      "small": "10 commandes/mois",
+      "medium": "100 commandes/mois",
+      "large": "1 000 commandes/mois",
+      "footer": "RiseManager accompagne chaque niveau."
+    }
+  },
+  "integrations": {
+    "title": "Intégrations"
+  },
+  "testimonials": {
+    "t1": "J’ai commencé proprement sans me perdre.",
+    "t2": "Premières ventes gérées facilement.",
+    "t3": "J’aurais aimé commencer avec ça plus tôt."
+  },
+  "pricing": {
+    "starter": "Starter Free Trial",
+    "starterSub": "7 jours essai",
+    "growth": "Growth",
+    "growthSub": "quand ça commence à vendre",
+    "empire": "Empire",
+    "empireSub": "quand tu scales"
+  },
+  "faq": {
+    "q1": "Faut-il être expert ?",
+    "q2": "Combien de temps pour commencer ?",
+    "q3": "Compatible mobile ?",
+    "q4": "Puis-je évoluer ensuite ?",
+    "q5": "Support disponible ?"
+  },
+  "form": {
+    "name": "Nom",
+    "phone": "Téléphone",
+    "country": "Pays",
+    "beginnerQ": "Tu débutes ?",
+    "yes": "Oui",
+    "started": "J’ai déjà commencé",
+    "project": "Projet :",
+    "clothing": "vêtements",
+    "cosmetic": "cosmétique",
+    "accessories": "accessoires",
+    "other": "autre"
+  }
+}
