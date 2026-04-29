@@ -90,6 +90,11 @@
     "q4": "Puis-je évoluer ensuite ?",
     "q5": "Support disponible ?"
   },
+  "faq_answer_q1": "Non, RiseManager est conçu pour être simple et intuitif, même pour les débutants sans expérience technique.",
+  "faq_answer_q2": "Quelques minutes suffisent. Créez votre compte, ajoutez vos premiers produits, et vous êtes prêt.",
+  "faq_answer_q3": "Oui, l'interface s'adapte parfaitement à tous vos écrans, vous permettant de gérer votre business depuis votre téléphone.",
+  "faq_answer_q4": "Absolument. Le système grandit avec vous et propose des fonctionnalités avancées quand vos ventes augmentent.",
+  "faq_answer_q5": "Oui, notre équipe est disponible pour vous accompagner pas à pas dans vos débuts.",
   "form": {
     "name": "Nom",
     "phone": "Téléphone",
