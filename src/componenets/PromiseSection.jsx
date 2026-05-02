@@ -39,14 +39,14 @@ const PromiseSection = () => {
           <div className="flex justify-center animate-slide-up">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/5 dark:bg-primary/10 rounded-full border border-primary/10 dark:border-primary/20">
               <CheckCircle2 size={14} className="text-primary" />
-              <span className="text-[10px] font-extrabold text-primary uppercase tracking-[0.2em] leading-none">LA SOLUTION</span>
+              <span className="text-[10px] font-extrabold text-primary uppercase tracking-[0.2em] leading-none">{t('promise_badge')}</span>
             </div>
           </div>
           <h2 className="text-4xl lg:text-6xl font-black text-heading dark:text-white leading-[1.1] animate-slide-up" style={{ animationDelay: '0.1s' }}>
             {t('promise.title')}
           </h2>
           <p className="text-lg text-body dark:text-slate-400 leading-relaxed max-w-2xl mx-auto font-medium animate-slide-up" style={{ animationDelay: '0.15s' }}>
-            Tout ce dont vous avez besoin pour gérer, suivre et développer votre business e-commerce.
+            {t('promise_subtitle')}
           </p>
         </div>
 

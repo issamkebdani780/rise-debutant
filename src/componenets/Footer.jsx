@@ -22,7 +22,7 @@ const Footer = () => {
                             />
                         </Link>
                         <p className="text-slate-500 dark:text-slate-400 text-lg font-medium leading-relaxed max-w-md">
-                            {t("Le système d'exploitation n°1 pour les débutants en e-commerce.")}
+                            {t("footer_desc")}
                         </p>
                         <div className="flex items-center gap-3">
                             <a href="#" className="w-10 h-10 rounded-xl bg-slate-50 dark:bg-slate-900 flex items-center justify-center text-slate-400 dark:text-slate-500 hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white transition-all border border-slate-100 dark:border-slate-800 group shadow-sm transition-all hover:-translate-y-1">
@@ -39,7 +39,7 @@ const Footer = () => {
                     <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                         {/* Plateforme Column */}
                         <div className="space-y-6">
-                            <div className="text-[10px] font-black text-primary uppercase tracking-[0.2em]">{t("Plateforme")}</div>
+                            <div className="text-[10px] font-black text-primary uppercase tracking-[0.2em]">{t("footer_platform")}</div>
                             <ul className="space-y-4">
                                 {[
                                     { name: t('header.features'), to: '#features' },
@@ -55,7 +55,7 @@ const Footer = () => {
 
                         {/* Ecosystème Column */}
                         <div className="space-y-6">
-                            <div className="text-[10px] font-black text-primary uppercase tracking-[0.2em]">{t("Écosystème")}</div>
+                            <div className="text-[10px] font-black text-primary uppercase tracking-[0.2em]">{t("footer_ecosystem")}</div>
                             <ul className="space-y-4">
                                 {['RiseCart', 'RiseConfirm', 'RiseAcademy', 'RisePay'].map(link => (
                                     <li key={link}>
@@ -70,14 +70,14 @@ const Footer = () => {
 
                         {/* Contact Direct Column */}
                         <div className="space-y-6">
-                            <div className="text-[10px] font-black text-primary uppercase tracking-[0.2em]">{t("Contact Direct")}</div>
+                            <div className="text-[10px] font-black text-primary uppercase tracking-[0.2em]">{t("footer_contact")}</div>
                             <div className="flex flex-col gap-4">
                                 <a href="mailto:contact@risemanager.com" className="flex items-center gap-4 p-4 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-primary/30 hover:bg-white dark:hover:bg-slate-800 hover:shadow-lg transition-all group overflow-hidden">
                                     <div className="w-10 h-10 flex items-center justify-center bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shrink-0 shadow-sm text-primary group-hover:bg-primary group-hover:text-white transition-all">
                                         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2-2v10a2 2 0 002 2z" /></svg>
                                     </div>
                                     <div className="min-w-0">
-                                        <div className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase leading-none mb-1">{t("Email")}</div>
+                                        <div className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase leading-none mb-1">{t("footer_email")}</div>
                                         <div className="text-xs sm:text-sm font-bold text-slate-600 dark:text-white group-hover:text-primary transition-colors truncate">contact@risemanager.com</div>
                                     </div>
                                 </a>
@@ -89,10 +89,10 @@ const Footer = () => {
                 {/* Trust Signals Integration */}
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 py-10 border border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 rounded-[32px] px-8 mb-12">
                     {[
-                        { label: "Intégrations Natives", icon: "M13 10V3L4 14h7v7l9-11h-7z" },
-                        { label: "Support Local (DZ)", icon: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" },
-                        { label: "Données Sécurisées", icon: "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" },
-                        { label: "Infrastructure Sérieuse", icon: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5" }
+                        { label: t("footer_signal_1"), icon: "M13 10V3L4 14h7v7l9-11h-7z" },
+                        { label: t("footer_signal_2"), icon: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" },
+                        { label: t("footer_signal_3"), icon: "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" },
+                        { label: t("footer_signal_4"), icon: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5" }
                     ].map((signal, i) => (
                         <div key={i} className="flex flex-col items-center lg:items-start gap-2 group">
                             <div className="text-primary/70 group-hover:text-primary dark:text-primary-light/70 dark:group-hover:text-primary-light transition-colors">
@@ -100,7 +100,7 @@ const Footer = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d={signal.icon} />
                                 </svg>
                             </div>
-                            <div className="text-[11px] font-black text-slate-800 dark:text-slate-200 uppercase tracking-widest text-center lg:text-left">{t(signal.label)}</div>
+                            <div className="text-[11px] font-black text-slate-800 dark:text-slate-200 uppercase tracking-widest text-center lg:text-left">{signal.label}</div>
                         </div>
                     ))}
                 </div>
@@ -108,7 +108,7 @@ const Footer = () => {
                 {/* Footnotes */}
                 <div className="flex flex-col md:flex-row justify-between items-center gap-8">
                     <div className="text-[11px] font-bold text-slate-400 dark:text-slate-500">
-                        &copy; {new Date().getFullYear()} RiseManager Debutant. Tous droits réservés.
+                        &copy; {new Date().getFullYear()} {t("footer_copyright")}
                     </div>
                 </div>
             </div>

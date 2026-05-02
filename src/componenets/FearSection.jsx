@@ -30,14 +30,14 @@ const FearSection = () => {
           <div className="flex justify-center animate-slide-up">
             <div className="inline-flex items-center gap-2.5 px-5 py-2.5 bg-red-500/10 rounded-full border border-red-500/20">
               <AlertTriangle size={14} className="text-red-500 dark:text-red-400" />
-              <span className="text-[10px] font-extrabold text-red-500 dark:text-red-400 uppercase tracking-[0.2em] leading-none">LE PROBLÈME</span>
+              <span className="text-[10px] font-extrabold text-red-500 dark:text-red-400 uppercase tracking-[0.2em] leading-none">{t('fear_badge')}</span>
             </div>
           </div>
           <h2 className="text-4xl lg:text-6xl font-black text-heading dark:text-white leading-[1.1] animate-slide-up" style={{ animationDelay: '0.1s' }}>
             {t('fear.title')}
           </h2>
           <p className="text-lg text-body dark:text-slate-400 leading-relaxed max-w-xl mx-auto font-medium animate-slide-up" style={{ animationDelay: '0.15s' }}>
-            Des problèmes qui vous coûtent du temps, de l'argent et des clients chaque jour.
+            {t('fear_subtitle')}
           </p>
         </div>
 

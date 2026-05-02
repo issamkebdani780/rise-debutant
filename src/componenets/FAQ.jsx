@@ -14,7 +14,7 @@ const FAQ = () => {
                 <div className="max-w-3xl mx-auto text-center mb-20 space-y-6">
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-50 dark:bg-slate-900 rounded-full border border-slate-100 dark:border-slate-800 transition-colors">
                         <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                        <span className="text-[10px] font-extrabold text-slate-500 dark:text-slate-400 uppercase tracking-widest leading-none">FAQ</span>
+                        <span className="text-[10px] font-extrabold text-slate-500 dark:text-slate-400 uppercase tracking-widest leading-none">{t('faq_badge')}</span>
                     </div>
                     <h2 className="text-3xl lg:text-5xl font-extrabold text-heading dark:text-white leading-tight animate-slide-up">
                         {t('header.faq')}
@@ -47,7 +47,7 @@ const FAQ = () => {
                                 <div className="px-6 lg:px-8 pb-8 pt-2">
                                     <div className="h-[1px] w-full bg-slate-100 dark:bg-slate-800 mb-6" />
                                     <p className="text-body dark:text-slate-400 leading-relaxed font-medium">
-                                        {t(`faq_answer_${key}`) || "Oui, notre système est conçu spécialement pour ceux qui n'ont aucune expérience technique. Vous pouvez lancer votre boutique en moins de 15 minutes."}
+                                        {t(`faq_answer_${key}`) || t('faq_fallback_answer')}
                                     </p>
                                 </div>
                             </div>

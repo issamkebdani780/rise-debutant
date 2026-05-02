@@ -6,9 +6,9 @@ const AmbitionSection = () => {
   const { t } = useTranslation();
 
   const timeline = [
-    { icon: <TrendingUp size={28} />, key: 'small', num: '01', gradient: 'from-blue-500 to-cyan-400', glow: 'bg-blue-500/10 dark:bg-blue-500/15', text: 'text-blue-500', border: 'group-hover:border-blue-500/30', label: 'Démarrage' },
-    { icon: <Award size={28} />, key: 'medium', num: '02', gradient: 'from-purple-500 to-violet-400', glow: 'bg-purple-500/10 dark:bg-purple-500/15', text: 'text-purple-500', border: 'group-hover:border-purple-500/30', label: 'Croissance' },
-    { icon: <Crown size={28} />, key: 'large', num: '03', gradient: 'from-amber-400 to-yellow-300', glow: 'bg-amber-500/10 dark:bg-amber-500/15', text: 'text-amber-500', border: 'group-hover:border-amber-500/30', label: 'Domination' },
+    { icon: <TrendingUp size={28} />, key: 'small', num: '01', gradient: 'from-blue-500 to-cyan-400', glow: 'bg-blue-500/10 dark:bg-blue-500/15', text: 'text-blue-500', border: 'group-hover:border-blue-500/30', label: t('ambition_timeline_small') },
+    { icon: <Award size={28} />, key: 'medium', num: '02', gradient: 'from-purple-500 to-violet-400', glow: 'bg-purple-500/10 dark:bg-purple-500/15', text: 'text-purple-500', border: 'group-hover:border-purple-500/30', label: t('ambition_timeline_medium') },
+    { icon: <Crown size={28} />, key: 'large', num: '03', gradient: 'from-amber-400 to-yellow-300', glow: 'bg-amber-500/10 dark:bg-amber-500/15', text: 'text-amber-500', border: 'group-hover:border-amber-500/30', label: t('ambition_timeline_large') },
   ];
 
   return (
@@ -24,14 +24,14 @@ const AmbitionSection = () => {
           <div className="flex justify-center animate-slide-up">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/5 dark:bg-primary/10 rounded-full border border-primary/10 dark:border-primary/20">
               <Sparkles size={14} className="text-primary" />
-              <span className="text-[10px] font-extrabold text-primary uppercase tracking-[0.2em] leading-none">ÉVOLUTION</span>
+              <span className="text-[10px] font-extrabold text-primary uppercase tracking-[0.2em] leading-none">{t('ambition_badge')}</span>
             </div>
           </div>
           <h2 className="text-4xl lg:text-6xl font-black text-heading dark:text-white leading-[1.1] animate-slide-up" style={{ animationDelay: '0.1s' }}>
             {t('ambition.title')}
           </h2>
           <p className="text-lg text-body dark:text-slate-400 leading-relaxed font-medium animate-slide-up" style={{ animationDelay: '0.15s' }}>
-            Peu importe votre taille actuelle, RiseManager grandit avec vous.
+            {t('ambition_subtitle')}
           </p>
         </div>
 

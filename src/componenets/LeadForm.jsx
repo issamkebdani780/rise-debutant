@@ -20,8 +20,8 @@ const LeadForm = () => {
             <div className="w-24 h-24 bg-gradient-to-br from-primary to-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-8 shadow-[0_0_40px_rgba(37,99,235,0.4)] dark:shadow-[0_0_40px_rgba(59,130,246,0.4)]">
               <CheckCircle2 size={48} />
             </div>
-            <h2 className="text-4xl font-black text-slate-900 dark:text-white mb-4 bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-600 dark:from-white dark:to-slate-400">Félicitations !</h2>
-            <p className="text-slate-600 dark:text-slate-400 text-lg font-medium">Votre demande a été envoyée avec succès. Notre équipe vous contactera très bientôt.</p>
+            <h2 className="text-4xl font-black text-slate-900 dark:text-white mb-4 bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-600 dark:from-white dark:to-slate-400">{t('lead_success_title')}</h2>
+            <p className="text-slate-600 dark:text-slate-400 text-lg font-medium">{t('lead_success_msg')}</p>
           </div>
         </div>
       </section>
@@ -47,22 +47,21 @@ const LeadForm = () => {
             <div className="relative z-10">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-8 shadow-sm">
                 <Sparkles size={16} className="text-yellow-300" />
-                <span className="text-sm font-bold tracking-wide uppercase">Accès VIP</span>
+                <span className="text-sm font-bold tracking-wide uppercase">{t('lead_badge')}</span>
               </div>
               <h2 className="text-4xl lg:text-5xl font-black mb-6 leading-tight">
-                Prêt à lancer <br/>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-100">ton empire ?</span>
+                {t('lead_title')}
               </h2>
               <p className="text-white/90 text-lg mb-10 leading-relaxed font-medium">
-                Rejoins les centaines d'entrepreneurs qui ont transformé leur vision en réalité. Remplis ce formulaire pour un accompagnement sur-mesure.
+                {t('lead_desc')}
               </p>
             </div>
             
             <div className="relative z-10 space-y-6 mt-auto">
               {[
-                { icon: Rocket, text: "Lancement accéléré en 48h" },
-                { icon: CheckCircle2, text: "Accompagnement 100% gratuit" },
-                { icon: CheckCircle2, text: "Configuration assistée" }
+                { icon: Rocket, text: t("lead_feat_1") },
+                { icon: CheckCircle2, text: t("lead_feat_2") },
+                { icon: CheckCircle2, text: t("lead_feat_3") }
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-4 group">
                   <div className="w-12 h-12 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20 shadow-lg group-hover:scale-110 group-hover:bg-white/20 transition-all duration-300">
@@ -77,8 +76,8 @@ const LeadForm = () => {
           {/* Form Side */}
           <div className="lg:col-span-3 p-10 lg:p-14 bg-white dark:bg-slate-900 rounded-[40px] lg:rounded-none shadow-2xl lg:shadow-none border border-slate-100 dark:border-slate-800 lg:border-none">
             <div className="mb-10">
-              <h3 className="text-3xl font-black text-slate-900 dark:text-white mb-2">Parle-nous de ton projet</h3>
-              <p className="text-slate-500 dark:text-slate-400 font-medium text-lg">Tes informations sont sécurisées et resteront confidentielles.</p>
+              <h3 className="text-3xl font-black text-slate-900 dark:text-white mb-2">{t('lead_form_title')}</h3>
+              <p className="text-slate-500 dark:text-slate-400 font-medium text-lg">{t('lead_form_subtitle')}</p>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -149,7 +148,7 @@ const LeadForm = () => {
               </div>
 
               <button className="w-full group bg-gradient-to-r from-primary to-blue-600 text-white py-5 rounded-2xl font-black text-xl shadow-[0_8px_30px_rgba(37,99,235,0.3)] dark:shadow-[0_8px_30px_rgba(59,130,246,0.3)] hover:shadow-[0_8px_40px_rgba(37,99,235,0.5)] hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-3 mt-8">
-                <span>Envoyer le projet</span>
+                <span>{t('form.submit')}</span>
                 <Send size={22} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
               </button>
             </form>

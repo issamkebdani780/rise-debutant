@@ -18,20 +18,20 @@ const SupportSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8 animate-slide-up">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-black uppercase tracking-wider">
-               Assistance & Accompagnement
+               {t('support_badge')}
             </div>
             <h2 className="text-4xl lg:text-6xl font-black text-heading dark:text-white leading-[1.1]">
               {t('support.title')}
             </h2>
             <p className="text-xl text-body dark:text-slate-400 leading-relaxed font-medium">
-              Nous savons que débuter peut être stressant. C'est pourquoi nous avons mis en place une structure d'aide complète pour vous.
+              {t('support_desc')}
             </p>
             <div className="pt-4 flex flex-wrap gap-4">
                <button className="px-8 py-4 bg-primary text-white rounded-2xl font-bold shadow-lg shadow-primary/20 hover:-translate-y-1 transition-all">
-                  Contacter le support
+                  {t('support_btn_contact')}
                </button>
                <button className="px-8 py-4 bg-white dark:bg-slate-800 text-heading dark:text-white border border-slate-100 dark:border-slate-700 rounded-2xl font-bold hover:bg-slate-50 transition-all">
-                  Centre d'aide
+                  {t('support_btn_help')}
                </button>
             </div>
           </div>
@@ -48,7 +48,7 @@ const SupportSection = () => {
                 </div>
                 <h4 className="text-lg font-black text-heading dark:text-white mb-2">{t(`support.${item.key}`)}</h4>
                 <p className="text-sm text-body dark:text-slate-500 font-medium leading-relaxed">
-                   {t(`support.${item.key}_desc`) || "Bénéficiez d'une aide personnalisée pour chaque étape de votre projet."}
+                   {t(`support.${item.key}_desc`) || t('support_fallback_desc')}
                 </p>
               </div>
             ))}

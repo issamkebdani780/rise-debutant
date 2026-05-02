@@ -6,16 +6,16 @@ const Testimonials = () => {
   const { t } = useTranslation();
   
   const stats = [
-    { value: '500+', label: 'UTILISATEURS ACTIFS' },
-    { value: '2M+', label: 'COMMANDES GÉRÉES' },
-    { value: 'x3.5', label: 'ROI MOYEN CLIENT' },
-    { value: '98%', label: 'TAUX DE SATISFACTION' },
+    { value: '500+', label: t('testimonials_stat_1') },
+    { value: '2M+', label: t('testimonials_stat_2') },
+    { value: 'x3.5', label: t('testimonials_stat_3') },
+    { value: '98%', label: t('testimonials_stat_4') },
   ];
 
   const testimonials = [
-    { key: 't1', name: 'Sami B.', role: 'E-COMMERÇANT', initials: 'SB', gradient: 'from-blue-500 to-cyan-400' },
-    { key: 't2', name: 'Kenza L.', role: 'VENDEUSE INSTAGRAM', initials: 'KL', gradient: 'from-purple-500 to-pink-400' },
-    { key: 't3', name: 'Omar T.', role: 'DROPSHIPPER', initials: 'OT', gradient: 'from-amber-400 to-orange-500' },
+    { key: 't1', name: 'Sami B.', role: t('testimonials_role_1'), initials: 'SB', gradient: 'from-blue-500 to-cyan-400' },
+    { key: 't2', name: 'Kenza L.', role: t('testimonials_role_2'), initials: 'KL', gradient: 'from-purple-500 to-pink-400' },
+    { key: 't3', name: 'Omar T.', role: t('testimonials_role_3'), initials: 'OT', gradient: 'from-amber-400 to-orange-500' },
   ];
 
   return (
@@ -32,11 +32,11 @@ const Testimonials = () => {
           <div className="flex justify-center animate-slide-up">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500/5 dark:bg-amber-500/10 rounded-full border border-amber-500/10 dark:border-amber-500/20">
               <Star size={14} className="text-amber-500" fill="currentColor" />
-              <span className="text-[10px] font-extrabold text-amber-500 uppercase tracking-[0.2em] leading-none">TÉMOIGNAGES</span>
+              <span className="text-[10px] font-extrabold text-amber-500 uppercase tracking-[0.2em] leading-none">{t('testimonials_badge')}</span>
             </div>
           </div>
           <h2 className="text-4xl lg:text-6xl font-black text-heading dark:text-white leading-[1.1] animate-slide-up" style={{ animationDelay: '0.1s' }}>
-            {t('testimonials.title') || "Ce que nos débutants disent"}
+            {t('testimonials_title')}
           </h2>
         </div>
 

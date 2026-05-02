@@ -17,8 +17,8 @@ const Hero = () => {
   const { t } = useTranslation();
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [orders, setOrders] = useState([
-    { id: 1, customer: "Sarah K.", status: "Delivered", amount: "450 DA" },
-    { id: 2, customer: "Ahmed M.", status: "Pending", amount: "1,200 DA" },
+    { id: 1, customer: "Sarah K.", status: t('hero_delivered'), amount: "450 DA" },
+    { id: 2, customer: "Ahmed M.", status: t('hero_pending'), amount: "1,200 DA" },
   ]);
 
   const handleMouseMove = (e) => {
@@ -32,8 +32,8 @@ const Hero = () => {
   const addOrder = () => {
     const newOrder = {
       id: Date.now(),
-      customer: "New Client",
-      status: "Just now",
+      customer: t('hero_new_client'),
+      status: t('hero_just_now'),
       amount: Math.floor(Math.random() * 1000) + 100 + " DA"
     };
     setOrders([newOrder, ...orders.slice(0, 3)]);
@@ -59,7 +59,7 @@ const Hero = () => {
         <div className="text-center lg:text-left rtl:lg:text-right animate-slide-up">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-bold text-sm mb-6">
             <TrendingUp size={16} />
-            <span>{t('Conçu pour le marché africain')}</span>
+            <span>{t('hero_badge')}</span>
           </div>
 
           <h1 className="text-5xl lg:text-7xl font-black text-heading dark:text-white leading-[1.1] mb-6">
@@ -93,7 +93,7 @@ const Hero = () => {
                 <CheckCircle2 size={14} fill="currentColor" className="text-white bg-green-500 rounded-full" />
                 <span className="font-bold text-heading dark:text-white">4.9/5</span>
               </div>
-              <p className="text-body dark:text-slate-400">+2,000 beginners started today</p>
+              <p className="text-body dark:text-slate-400">{t('hero_social_proof')}</p>
             </div>
           </div>
         </div>
@@ -106,8 +106,8 @@ const Hero = () => {
           <div className="glass dark:bg-slate-900/80 rounded-[40px] p-8 shadow-premium border border-white/50 dark:border-slate-800/50 backdrop-blur-2xl relative overflow-hidden">
             <div className="flex items-center justify-between mb-8">
               <div>
-                <h3 className="font-bold text-heading dark:text-white">Ma Boutique</h3>
-                <p className="text-xs text-body dark:text-slate-400">Aujourd'hui</p>
+                <h3 className="font-bold text-heading dark:text-white">{t('hero_shop_name')}</h3>
+                <p className="text-xs text-body dark:text-slate-400">{t('hero_today')}</p>
               </div>
               <div className="flex gap-2">
                 <button 
@@ -126,14 +126,14 @@ const Hero = () => {
               <div className="bg-slate-50 dark:bg-slate-800/50 p-4 rounded-2xl">
                 <div className="flex items-center gap-2 text-primary mb-1">
                   <ShoppingBag size={14} />
-                  <span className="text-[10px] font-bold uppercase tracking-wider">Ventes</span>
+                  <span className="text-[10px] font-bold uppercase tracking-wider">{t('hero_sales')}</span>
                 </div>
                 <div className="text-2xl font-black text-heading dark:text-white">12,450 DA</div>
               </div>
               <div className="bg-slate-50 dark:bg-slate-800/50 p-4 rounded-2xl">
                 <div className="flex items-center gap-2 text-green-500 mb-1">
                   <Users size={14} />
-                  <span className="text-[10px] font-bold uppercase tracking-wider">Clients</span>
+                  <span className="text-[10px] font-bold uppercase tracking-wider">{t('hero_clients')}</span>
                 </div>
                 <div className="text-2xl font-black text-heading dark:text-white">18</div>
               </div>
@@ -141,7 +141,7 @@ const Hero = () => {
 
             <div>
               <div className="flex items-center justify-between mb-4">
-                <h4 className="font-bold text-sm text-heading dark:text-white uppercase tracking-widest opacity-50">Dernières Commandes</h4>
+                <h4 className="font-bold text-sm text-heading dark:text-white uppercase tracking-widest opacity-50">{t('hero_last_orders')}</h4>
                 <TrendingUp size={14} className="text-primary" />
               </div>
               <div className="space-y-3">
@@ -181,7 +181,7 @@ const Hero = () => {
                 <ArrowUpRight size={24} />
               </div>
               <div>
-                <p className="text-[10px] text-body dark:text-slate-400 font-bold uppercase">Croissance</p>
+                <p className="text-[10px] text-body dark:text-slate-400 font-bold uppercase">{t('hero_growth')}</p>
                 <p className="text-xl font-black text-heading dark:text-white">+125%</p>
               </div>
             </div>
@@ -193,7 +193,7 @@ const Hero = () => {
                 <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-[10px] font-bold text-white border-2 border-white dark:border-slate-800">IK</div>
                 <div className="w-8 h-8 rounded-full bg-purple-500 flex items-center justify-center text-[10px] font-bold text-white border-2 border-white dark:border-slate-800">AH</div>
               </div>
-              <p className="text-xs font-bold text-heading dark:text-white">Nouveaux clients !</p>
+              <p className="text-xs font-bold text-heading dark:text-white">{t('hero_new_clients_msg')}</p>
             </div>
           </div>
         </div>

@@ -13,13 +13,13 @@ const Integrations = () => {
     const integrations = [
         { 
             name: "WhatsApp", 
-            desc: "Notifications automatiques", 
+            desc: t("integrations_whatsapp_desc"), 
             icon: <MessageCircle size={32} />, 
             color: "bg-green-500" 
         },
         { 
             name: "Meta Ads", 
-            desc: "Tracking Pixel & API", 
+            desc: t("integrations_meta_desc"), 
             icon: (
                 <svg className="w-8 h-8 fill-current" viewBox="0 0 24 24">
                     <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
@@ -29,7 +29,7 @@ const Integrations = () => {
         },
         { 
             name: "TikTok", 
-            desc: "TikTok Events API", 
+            desc: t("integrations_tiktok_desc"), 
             icon: (
                 <svg className="w-8 h-8" viewBox="0 0 256 290" fill="none">
                     <path d="M189.72 104.421c18.678 13.345 41.56 21.197 66.273 21.197V78.242c-4.68 0-9.348-.489-13.916-1.463v37.27c-24.711 0-47.59-7.852-66.272-21.197v97.058c0 48.543-39.37 87.897-87.928 87.897-18.142 0-35.026-5.502-49.046-14.926 16.009 16.34 38.376 26.474 63.03 26.474 48.56 0 87.93-39.354 87.93-87.9v-97.058h.001Zm17.17-47.776c-9.546-10.423-15.814-23.893-17.17-38.785V12.196h-13.18c3.317 18.927 14.63 35.127 30.35 44.449ZM75.95 235.363c-5.087-6.643-7.85-14.771-7.85-23.13 0-21.273 17.245-38.52 38.53-38.52 3.967 0 7.895.601 11.672 1.788v-49.074c-4.62-.627-9.29-.87-13.942-.728v38.254c-3.78-1.187-7.708-1.789-11.676-1.789-21.283 0-38.528 17.248-38.528 38.523 0 15.118 8.698 28.218 21.363 34.561l.43.115Z" fill="#FF004F"/>
@@ -41,19 +41,19 @@ const Integrations = () => {
         },
         { 
             name: "RiseCart", 
-            desc: "Le CMS E-commerce n°1", 
+            desc: t("integrations_risecart_desc"), 
             icon: <img src="/ecosystem/risecart.jpg" className="w-full h-full object-cover" />, 
             color: "bg-primary" 
         },
         { 
             name: "RiseConfirm", 
-            desc: "Confirmation automatique", 
+            desc: t("integrations_riseconfirm_desc"), 
             icon: <img src="/ecosystem/riseconfirem.jpg" className="w-full h-full object-cover" />, 
             color: "bg-orange-500" 
         },
         { 
             name: "Google Sheets", 
-            desc: "Export auto 1-clic", 
+            desc: t("integrations_sheets_desc"), 
             icon: <FileSpreadsheet size={32} />, 
             color: "bg-green-600" 
         },
@@ -70,15 +70,14 @@ const Integrations = () => {
                     <div className="flex justify-center animate-slide-up">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-50 dark:bg-slate-900 rounded-full border border-slate-100 dark:border-slate-800 shadow-sm transition-colors">
                             <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                            <span className="text-[10px] font-extrabold text-slate-500 dark:text-slate-400 uppercase tracking-widest leading-none">INTÉGRATIONS</span>
+                            <span className="text-[10px] font-extrabold text-slate-500 dark:text-slate-400 uppercase tracking-widest leading-none">{t('integrations_badge')}</span>
                         </div>
                     </div>
                     <h2 className="text-4xl lg:text-6xl font-extrabold text-heading dark:text-white leading-[1.1] animate-slide-up" style={{ animationDelay: '0.1s' }}>
-                        Un système qui <span className="text-primary">parle</span> <br />
-                        à tous vos outils
+                        {t('integrations_title')}
                     </h2>
                     <p className="text-xl text-body dark:text-slate-400 leading-relaxed max-w-2xl mx-auto font-medium animate-slide-up" style={{ animationDelay: '0.2s' }}>
-                        RiseManager s'intègre nativement avec les meilleures plateformes pour automatiser votre workflow de A à Z.
+                        {t('integrations_desc')}
                     </p>
                 </div>
 
@@ -115,7 +114,7 @@ const Integrations = () => {
 
                                     <div className="absolute top-6 end-8">
                                         <div className="flex items-center gap-1 text-[10px] font-bold text-primary uppercase opacity-0 group-hover:opacity-100 transition-opacity">
-                                            <span>Connecté</span>
+                                            <span>{t('integrations_connected')}</span>
                                             <ArrowRightLeft size={10} />
                                         </div>
                                     </div>

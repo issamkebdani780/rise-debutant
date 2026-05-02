@@ -20,7 +20,7 @@ const StepsSection = () => {
              <span className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">{t('steps.title')}</span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-black text-heading dark:text-white">
-            Prêt à décoller en <span className="text-primary">3 étapes</span>
+            {t('steps_title_part')}
           </h2>
         </div>
 

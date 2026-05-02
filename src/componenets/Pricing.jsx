@@ -6,9 +6,22 @@ const Pricing = () => {
   const { t } = useTranslation();
 
   const plans = [
-    { key: 'starter', price: '0', icon: '' },
-    { key: 'growth', price: '299', icon: '', popular: true },
-    { key: 'empire', price: '999', icon: '' },
+    { 
+      key: 'starter', 
+      price: '0', 
+      features: ['basic_dash', 'limit_orders', 'single_user', 'email_support', 'manual_export'] 
+    },
+    { 
+      key: 'growth', 
+      price: '299', 
+      popular: true, 
+      features: ['adv_dash', 'unlimit_orders', 'multi_user', 'whatsapp_support', 'auto_sync'] 
+    },
+    { 
+      key: 'empire', 
+      price: '999', 
+      features: ['multi_shop', 'api_access', 'unlimit_users', 'dedicated_mgr', 'white_label'] 
+    },
   ];
 
   return (
@@ -32,7 +45,7 @@ const Pricing = () => {
             >
               {plan.popular && (
                 <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary text-white px-6 py-2 rounded-full font-bold text-sm flex items-center gap-2">
-                  <Sparkles size={16} /> POPULAIRE
+                  <Sparkles size={16} /> {t('pricing_badge')}
                 </div>
               )}
               
@@ -42,17 +55,17 @@ const Pricing = () => {
                 <p className="text-body text-sm font-medium mb-6">{t(`pricing.${plan.key}Sub`)}</p>
                 <div className="flex items-end justify-center gap-1">
                   <span className="text-5xl font-black text-heading">{plan.price}</span>
-                  <span className="text-xl font-bold text-body mb-2">DA/mois</span>
+                  <span className="text-xl font-bold text-body mb-2">{t('pricing_unit')}</span>
                 </div>
               </div>
 
               <div className="space-y-4 mb-10">
-                {[1, 2, 3, 4, 5].map(i => (
+                {plan.features.map((feat, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <div className="w-5 h-5 bg-primary/10 text-primary rounded-full flex items-center justify-center shrink-0">
                       <Check size={12} strokeWidth={4} />
                     </div>
-                    <span className="text-heading font-medium text-sm">Avantage boutique {i}</span>
+                    <span className="text-heading font-medium text-sm">{t(`pricing_feat_${feat}`)}</span>
                   </div>
                 ))}
               </div>
@@ -62,7 +75,7 @@ const Pricing = () => {
                 ? 'bg-primary text-white shadow-lg shadow-primary/25 hover:bg-primary-hover' 
                 : 'bg-slate-100 dark:bg-slate-800 text-heading hover:bg-slate-200 dark:hover:bg-slate-700'
               }`}>
-                Choisir ce plan
+                {t('pricing_button')}
               </button>
             </div>
           ))}

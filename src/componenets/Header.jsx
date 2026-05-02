@@ -82,7 +82,7 @@ const Header = () => {
               <button
                 onClick={toggleTheme}
                 className="p-2 sm:p-2.5 border border-slate-50 dark:border-slate-800 rounded-full bg-slate-50/50 dark:bg-slate-800/50 shadow-inner hover:bg-slate-100 dark:hover:bg-slate-700 transition-all active:scale-95 group"
-                aria-label="Toggle Dark Mode"
+                aria-label={t('header.toggle_dark_mode')}
               >
                 {theme === 'dark' ? (
                   <svg className="w-4 h-4 text-amber-500 animate-spin-slow" fill="currentColor" viewBox="0 0 20 20">
