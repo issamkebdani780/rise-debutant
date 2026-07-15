@@ -45,8 +45,11 @@
   "steps": {
     "title": "In 3 steps",
     "step1": "Create your account",
+    "step1_desc": "A ultra-fast registration to start right now.",
     "step2": "Add products / orders",
-    "step3": "Lead like a real business"
+    "step2_desc": "Import your data or create your first entries in one click.",
+    "step3": "Lead like a real business",
+    "step3_desc": "Track your performance and scale your business with peace of mind."
   },
   "support": {
     "title": "You are not alone",
